@@ -6,7 +6,7 @@ var GroceryList = (props) => {
     <ul className="groceries">
     {props.list.map((item) => {
       var index = props.list.indexOf(item);
-    return <GroceryItem groceryItem={item} key={index}/>;
+    return <GroceryItem groceryItem={item} key={index} click={props.click}/>;
   })}
   </ul>
   )

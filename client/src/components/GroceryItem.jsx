@@ -5,6 +5,7 @@ var GroceryItem = (props) => (
   <li>
     <span>{props.groceryItem.name + ' -'}</span>
     <span>{props.groceryItem.quantity}</span>
+    <button onClick={() => {props.click(props.groceryItem.name);}}>delete</button>
   </li>
  </div>
 );
