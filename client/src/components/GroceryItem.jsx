@@ -3,9 +3,9 @@ import GroceryList from './GroceryList.jsx';
 var GroceryItem = (props) => (
   <div>
   <li>
-  <span>apples - </span>
-  <span>4</span>
- </li>
+    <span>{props.groceryItem.name + ' -'}</span>
+    <span>{props.groceryItem.quantity}</span>
+  </li>
  </div>
 );
 
